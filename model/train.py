@@ -75,6 +75,7 @@ for epoch in range(EPOCHS):
             total += labels.size(0)
 
     acc = correct / total
+    # acc = correct / total
     val_accs.append(acc)
     print(f"Epoch {epoch+1}/{EPOCHS} | Loss: {train_losses[-1]:.4f} | Val Acc: {acc:.3f}")
 

@@ -117,7 +117,7 @@ Outputs:
 - `cotton_stage_model.pth`
 - `training_curve.png`
 
-Final validation accuracy ≈ **75%**
+Final validation accuracy comes out to be approx **75%**
 
 ---
 

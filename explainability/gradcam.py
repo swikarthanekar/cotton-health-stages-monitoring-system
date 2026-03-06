@@ -5,6 +5,7 @@ from torchvision import transforms
 import cv2
 import numpy as np
 import sys
+import mediapipe
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

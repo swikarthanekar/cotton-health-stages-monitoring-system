@@ -12,6 +12,7 @@ DATA_DIR = "../data"
 BATCH_SIZE = 8
 EPOCHS = 15
 LR = 0.0005
+# could use LR = 0.5
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

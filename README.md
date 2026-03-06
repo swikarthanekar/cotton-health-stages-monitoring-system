@@ -15,7 +15,7 @@ Unlike basic crop classifiers, this system combines **transfer learning, visual 
 
 ## Problem Statement
 
-Cotton maturity is traditionally judged through manual inspection, which is:
+Cotton maturity is traditionally judged through a manual inspection, which is:
 
 - subjective  
 - inconsistent  

@@ -19,7 +19,6 @@ model.fc = torch.nn.Linear(model.fc.in_features, 4)
 model.load_state_dict(torch.load("../model/cotton_stage_model.pth", map_location=device))
 model.to(device)
 model.eval()
-
 app = Flask(__name__)
 
 transform = transforms.Compose([
@@ -36,7 +35,6 @@ def predict():
     file = request.files["image"]
     img = cv2.imdecode(np.frombuffer(file.read(), np.uint8), cv2.IMREAD_COLOR)
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
     tensor = transform(img_rgb).unsqueeze(0).to(device)
 
     with torch.no_grad():
@@ -46,7 +44,6 @@ def predict():
 
     stage = CLASS_NAMES[pred.item()]
     confidence = conf.item()
-
     is_ripped = True if "Bursting" in stage or "Harvest" in stage else False
     health_score = compute_health_score(confidence)
 

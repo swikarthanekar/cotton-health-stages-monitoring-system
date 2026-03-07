@@ -68,7 +68,7 @@ Used to **inform health scoring logic**
 ---
 
 ### 3. Cotton Boll & Flowers Recognition Dataset  
-Mixed growth stage cotton images
+Mixed growth stage cotton images -
 
 🔗 https://www.kaggle.com/datasets/sweefongwong/cotton-boll-and-flowers-recognition-dataset
 

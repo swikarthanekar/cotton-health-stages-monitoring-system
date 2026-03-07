@@ -14,7 +14,6 @@ CLASS_NAMES = [
 ]
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 model = torchvision.models.resnet18(pretrained=False)
 model.fc = torch.nn.Linear(model.fc.in_features, 4)
 model.load_state_dict(torch.load("../model/cotton_stage_model.pth", map_location=device))

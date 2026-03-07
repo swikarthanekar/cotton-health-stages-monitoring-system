@@ -31,6 +31,7 @@ def compute_health_score(prob):
     return int(50 + prob * 50)
 
 @app.route("/predict", methods=["POST"])
+
 def predict():
     file = request.files["image"]
     img = cv2.imdecode(np.frombuffer(file.read(), np.uint8), cv2.IMREAD_COLOR)
